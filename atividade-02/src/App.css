@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #1f2937;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 60px 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.tag {
+  display: inline-block;
+  background: #e8f0ff;
+  color: #2563eb;
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+header p {
+  color: #6b7280;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.form input {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.form button {
+  border: 0;
+  border-radius: 10px;
+  padding: 0 22px;
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background: #1d4ed8;
+}
+
+.tarefas {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px #00000010;
+}
+
+.titulo-lista {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titulo-lista span {
+  background: #e8f0ff;
+  color: #2563eb;
+  padding: 8px 12px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.vazio {
+  text-align: center;
+  padding: 40px;
+  color: #6b7280;
+}
+
+.icone {
+  margin: auto auto 15px;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #e8f0ff;
+  color: #2563eb;
+  font-size: 25px;
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tarefa {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.tarefa span {
+  flex: 1;
+}
+
+.check {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #2563eb;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+
+.tarefa.concluida span {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.remover {
+  border: 0;
+  background: transparent;
+  color: #999;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.remover:hover {
+  color: red;
+}
+
+footer {
+  text-align: center;
+  color: #9ca3af;
+  margin-top: 25px;
+}
+
+@media (max-width: 600px) {
+  .form {
+    flex-direction: column;
+  }
+
+  .form button {
+    height: 48px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}
