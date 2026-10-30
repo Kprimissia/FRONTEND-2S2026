@@ -1,0 +1,35 @@
+<main class="wrapper">
+  <section class="machine" aria-label="Calculadora Super Calc em Angular">
+    <header class="header">
+      <span class="title">★ ANGULAR SUPER CALC ★</span>
+      <span class="coins">🪙 ×{{ coinBadge }}</span>
+    </header>
+
+    <div class="screen">
+      <div class="subtext">{{ prev !== null && op ? (prev + ' ' + op) : '&nbsp;' }}</div>
+      <div class="main-display">{{ display }}</div>
+    </div>
+
+    <div class="pad">
+      <button class="calc-key pipe" (click)="clearAll()">AC</button>
+      <button class="calc-key block" (click)="inputDigit('7')">7</button>
+      <button class="calc-key block" (click)="inputDigit('8')">8</button>
+      <button class="calc-key fire" (click)="chooseOp('÷')">÷</button>
+
+      <button class="calc-key block" (click)="inputDigit('4')">4</button>
+      <button class="calc-key block" (click)="inputDigit('5')">5</button>
+      <button class="calc-key block" (click)="inputDigit('6')">6</button>
+      <button class="calc-key fire" (click)="chooseOp('×')">×</button>
+
+      <button class="calc-key block" (click)="inputDigit('1')">1</button>
+      <button class="calc-key block" (click)="inputDigit('2')">2</button>
+      <button class="calc-key block" (click)="inputDigit('3')">3</button>
+      <button class="calc-key fire" (click)="chooseOp('-')">-</button>
+
+      <button class="calc-key block" (click)="inputDigit('0')">0</button>
+      <button class="calc-key block" (click)="inputDigit('.')">.</button>
+      <button class="calc-key star" (click)="equals()">=</button>
+      <button class="calc-key fire" (click)="chooseOp('+')">+</button>
+    </div>
+  </section>
+</main>
