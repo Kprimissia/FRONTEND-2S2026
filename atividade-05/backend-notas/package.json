@@ -1,0 +1,15 @@
+{
+  "name": "backend-notas-crud",
+  "version": "1.0.0",
+  "description": "API RESTful CRUD de Notas com Node.js, Express, CORS, Body-Parser e persistencia em JSON (Aula 05)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}
