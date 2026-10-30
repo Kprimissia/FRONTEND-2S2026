@@ -122,3 +122,4 @@ Modelo unidimensional de layout projetado para distribuir espaço e alinhar iten
 ### 4.4. Frameworks CSS: Component-Based vs. Utility-First
 - **Baseados em Componentes (ex.: Bootstrap, Bulma):** Fornecem componentes prontos (`.btn`, `.card`, `.navbar`). Rápidos para prototipar, mas podem gerar visuais padronizados e exigir sobrescrita de estilos.
 - **Utility-First (ex.: Tailwind CSS):** Fornecem classes atômicas de propósito único (`flex`, `p-6`, `bg-slate-900`, `rounded-xl`) que são combinadas diretamente no HTML para construir qualquer design personalizado com alta produtividade e responsividade Mobile-First (`sm:`, `md:`, `lg:`, `xl:`).
+

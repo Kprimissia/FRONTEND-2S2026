@@ -124,3 +124,4 @@ function NovoConceitoPage({ onAdicionarConceito }) {
 }
 
 export default NovoConceitoPage
+

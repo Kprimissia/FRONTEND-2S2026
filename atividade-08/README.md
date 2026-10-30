@@ -90,3 +90,4 @@ npm run dev
    - **Função de Limpeza (*Cleanup*):** O `return () => { ... }` remove *event listeners* ou *timers* quando o componente é desmontado, evitando vazamentos de memória (*memory leaks*).
 4. **Consumo de APIs com `fetch`:** Realizado com funções `async/await` dentro do `useEffect` ou em resposta a eventos, controlando obrigatoriamente três estados de interface: **carregamento (`loading`)**, **sucesso (`data`)** e **erro (`error`)**.
 5. **React Router (`react-router-dom`):** Viabiliza múltiplas páginas em uma SPA (*Single Page Application*) atualizando a URL e alternando componentes sem recarregar o documento HTML completo.
+

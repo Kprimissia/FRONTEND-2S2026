@@ -85,3 +85,4 @@ Conforme solicitado na **Atividade 02 da Aula 01 (Slide 22)**, apresentamos a s�
 
 ### 4.3. Aplicações no Mercado
 Utilizado em larga escala por empresas como **Meta (Facebook, Instagram, WhatsApp Web)**, **Netflix**, **Airbnb**, **Uber**, **Spotify**, **Nubank** e **Mercado Livre** para construir *Single Page Applications* (SPAs), dashboards corporativos, e-commerces e plataformas SaaS de alta interatividade.
+

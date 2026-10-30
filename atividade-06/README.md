@@ -60,3 +60,4 @@ Em vez de estimar apenas em horas absolutas, equipes ágeis utilizam **Story Poi
 
 ### 2.7. Definition of Done (DoD — Definição de Pronto)
 Acordo formal da equipe que estabelece os critérios mínimos de qualidade para que uma tarefa seja considerada realmente concluída (código limpo, responsivo, integrado à API, revisado via Pull Request e testado).
+

@@ -107,3 +107,4 @@ A quinta aula apresentou os fundamentos práticos da criação de um servidor ba
 
 ### 5.3. Documentação e Testes com Postman
 O **Postman** permite organizar requisições em **Collections**, configurar variáveis de ambiente (`{{baseUrl}}`), testar payloads JSON nos métodos `POST` e `PUT` e validar os códigos de resposta HTTP (`200`, `201`, `204`, `400`, `404`).
+

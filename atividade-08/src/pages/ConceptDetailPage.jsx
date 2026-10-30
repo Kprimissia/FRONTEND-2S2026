@@ -58,3 +58,4 @@ function ConceptDetailPage({ conceitos, onToggleFavorito }) {
 }
 
 export default ConceptDetailPage
+

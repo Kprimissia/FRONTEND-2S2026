@@ -114,3 +114,4 @@ Interface atualizada em tempo real
 - **Express.js:** Framework minimalista e flexível para Node.js voltado à criação de servidores Web, rotas e APIs REST.
 - **CORS (`Cross-Origin Resource Sharing`):** Mecanismo de segurança do navegador que controla requisições entre diferentes origens (ex.: Front-end na Vercel `https://frontend-api-omega.vercel.app` requisitando dados do Back-end no Render `https://backend-deivison.onrender.com`).
 - **Render:** Plataforma de nuvem PaaS com integração contínua ao GitHub, SSL gratuito e suporte nativo a Web Services em Node.js.
+

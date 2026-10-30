@@ -23,3 +23,4 @@
 | **06** | [`./atividade-06`](./atividade-06) | Aula 06 — Projetos Front-End | Planejamento Ágil do Projeto Integrador (User Stories, Backlog, Kanban, DoD) |
 | **07** | [`./atividade-07`](./atividade-07) | Aula 07 — Frameworks CSS | Parte 1: 20 Elementos Box Model & 20 Flexbox • Parte 2: 36 Classes Tailwind CSS |
 | **08** | [`./atividade-08`](./atividade-08) | Aulas 08 e 09 — Projeto React | SPA **ReactHub** com JSX, Props, Hooks, Forms, Fetch API e React Router |
+

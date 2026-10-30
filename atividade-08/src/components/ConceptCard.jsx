@@ -31,3 +31,4 @@ function ConceptCard({ conceito, onToggleFavorito }) {
 }
 
 export default ConceptCard
+

@@ -26,3 +26,4 @@ defineEmits(['press']);
 .fire { background: #e52521; color: #ffffff; }
 .star { background: #5c94fc; color: #ffffff; }
 </style>
+

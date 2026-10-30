@@ -18,3 +18,4 @@ Conforme solicitado na **Aula 03 (Slides 34–38)**:
    - `Coin`: ícone vetorial SVG reutilizável em dois tamanhos (`small` e padrão);
    - `Cloud`: elemento decorativo SVG posicionado via `props.style`.
 3. **Publicação Contínua:** Repositório conectado à **Vercel** em `https://projeto-react-frontend2026.vercel.app/`.
+

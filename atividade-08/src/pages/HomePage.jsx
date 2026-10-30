@@ -72,3 +72,4 @@ function HomePage({ conceitos, onToggleFavorito }) {
 }
 
 export default HomePage
+

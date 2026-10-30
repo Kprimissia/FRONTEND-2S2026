@@ -199,3 +199,4 @@ Uma *User Story* ou Tarefa de Front-End só pode ser movida para a coluna **Done
 - [x] **Integração Real com API:** Comunicação HTTP testada com tratamento adequado de status (`200`, `201`, `400`, `404`, `500`).
 - [x] **Code Review Aprovado:** *Pull Request* revisado e aprovado sem conflitos de merge.
 - [x] **Documentação Atualizada:** Componentes, rotas ou instruções de uso atualizados no `README.md`.
+

@@ -23,3 +23,4 @@ function Navbar({ totalConceitos, totalFavoritos, larguraJanela }) {
 }
 
 export default Navbar
+
