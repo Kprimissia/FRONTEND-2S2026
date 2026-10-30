@@ -1,0 +1,110 @@
+{
+  "info": {
+    "_postman_id": "a5c9e8d2-0505-4b2a-9e11-202605050001",
+    "name": "API CRUD de Notas — Aula 05 (Express.js)",
+    "description": "Collection oficial documentando as 4 operações CRUD (Create, Read, Update, Delete) da API REST de Notas construída com Node.js, Express.js, CORS, Body-Parser e persistência em arquivo data.json.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000",
+      "type": "string"
+    },
+    {
+      "key": "noteId",
+      "value": "1730000000001",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "1. Listar Todas as Notas (READ - GET)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/notes",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "notes"]
+        },
+        "description": "Retorna a lista completa de notas armazenadas em data.json.\n\n- **Método:** GET (Seguro e Idempotente)\n- **Status de Sucesso:** 200 OK"
+      },
+      "response": []
+    },
+    {
+      "name": "2. Buscar Nota por ID (READ - GET /:id)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/notes/{{noteId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "notes", "{{noteId}}"]
+        },
+        "description": "Busca uma nota específica pelo seu identificador único.\n\n- **Método:** GET\n- **Status de Sucesso:** 200 OK\n- **Status de Erro:** 404 Not Found (`{ \"erro\": \"Nota não encontrada\" }`)"
+      },
+      "response": []
+    },
+    {
+      "name": "3. Criar Nova Nota (CREATE - POST)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"titulo\": \"Nova Nota via Postman\",\n  \"texto\": \"Testando a criação de recurso via método POST na API Express.\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/notes",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "notes"]
+        },
+        "description": "Cria uma nova nota gerando `id` único com `Date.now().toString()` e timestamp `criadoEm`.\n\n- **Método:** POST (Não idempotente)\n- **Status de Sucesso:** 201 Created\n- **Status de Erro:** 400 Bad Request"
+      },
+      "response": []
+    },
+    {
+      "name": "4. Atualizar Nota Existente (UPDATE - PUT /:id)",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"titulo\": \"Primeira nota (Atualizada)\",\n  \"texto\": \"Conteúdo atualizado integralmente através do método HTTP PUT.\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/notes/{{noteId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "notes", "{{noteId}}"]
+        },
+        "description": "Atualiza o título e o texto de uma nota existente identificada pelo parâmetro `:id`.\n\n- **Método:** PUT (Idempotente)\n- **Status de Sucesso:** 200 OK\n- **Status de Erro:** 404 Not Found (`{ \"erro\": \"Nota não encontrada\" }`)"
+      },
+      "response": []
+    },
+    {
+      "name": "5. Excluir Nota (DELETE - DELETE /:id)",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/notes/{{noteId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "notes", "{{noteId}}"]
+        },
+        "description": "Remove permanentemente uma nota do arquivo `data.json` a partir do seu `:id`.\n\n- **Método:** DELETE (Idempotente)\n- **Status de Sucesso:** 204 No Content\n- **Status de Erro:** 404 Not Found"
+      },
+      "response": []
+    }
+  ]
+}
