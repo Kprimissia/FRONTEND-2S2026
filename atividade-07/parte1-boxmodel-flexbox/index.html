@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aula 07 — Parte 1: 20 Elementos Box Model & 20 Propriedades Flexbox</title>
+  <!-- Vinculacao de CSS Externo conforme solicitado no Slide 33 -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="page-header">
+    <h1>Laboratório Prático: CSS Box Model (20 Elementos) &amp; Flexbox (20 Propriedades)</h1>
+    <p>Aula 07 — Frameworks CSS • Demonstração prática de Content, Padding, Border, Margin e Layout Responsivo com Flexbox</p>
+  </header>
+
+  <main class="main-wrapper">
+    <!-- Container Flex 1: Direcao Row, Wrap, Space-Between e Align-Items Stretch -->
+    <section class="flex-section section-row-between">
+      <h2 class="section-title">Grupo 1 — Flex Container (`justify-content: space-between`, `flex-wrap: wrap`, `gap`)</h2>
+      <div class="flex-container container-01">
+        <article id="box-01" class="box-card">
+          <span class="badge">Elemento #01</span>
+          <h3>Box Model Padrão</h3>
+          <p>Content: 210x130px | Padding: 16px | Border: 2px solid | Margin: 8px</p>
+        </article>
+        <article id="box-02" class="box-card">
+          <span class="badge">Elemento #02</span>
+          <h3>Padding Assimétrico</h3>
+          <p>Content: 210x130px | Padding: 20px 14px | Border: 3px dashed | Margin: 10px</p>
+        </article>
+        <article id="box-03" class="box-card">
+          <span class="badge">Elemento #03</span>
+          <h3>Border Dupla</h3>
+          <p>Content: 210x130px | Padding: 18px | Border: 4px double | Margin: 8px 12px</p>
+        </article>
+        <article id="box-04" class="box-card">
+          <span class="badge">Elemento #04</span>
+          <h3>Flex Grow Ativo</h3>
+          <p>Content: 220x130px | Padding: 16px | Border: 2px solid | Margin: 8px (`flex-grow: 1`)</p>
+        </article>
+        <article id="box-05" class="box-card">
+          <span class="badge">Elemento #05</span>
+          <h3>Align-Self Flex-End</h3>
+          <p>Content: 210x130px | Padding: 15px | Border: 2px dotted | Margin: 12px (`align-self`)</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Container Flex 2: Justify Center, Space-Evenly e Propriedades de Item (Order, Basis, Shrink) -->
+    <section class="flex-section section-center-evenly">
+      <h2 class="section-title">Grupo 2 — Flex Container (`justify-content: space-evenly`, `align-items: center`, `order`, `flex-basis`)</h2>
+      <div class="flex-container container-02">
+        <article id="box-06" class="box-card">
+          <span class="badge">Elemento #06</span>
+          <h3>Flex-Basis 240px</h3>
+          <p>Content: 240x135px | Padding: 18px | Border: 2px solid | Margin: 10px</p>
+        </article>
+        <article id="box-07" class="box-card">
+          <span class="badge">Elemento #07</span>
+          <h3>Order Prioritário (-1)</h3>
+          <p>Content: 220x140px | Padding: 20px | Border: 3px solid | Margin: 10px (`order: -1`)</p>
+        </article>
+        <article id="box-08" class="box-card">
+          <span class="badge">Elemento #08</span>
+          <h3>Flex-Shrink Controlado</h3>
+          <p>Content: 220x135px | Padding: 16px | Border: 2px groove | Margin: 8px (`flex-shrink: 0`)</p>
+        </article>
+        <article id="box-09" class="box-card">
+          <span class="badge">Elemento #09</span>
+          <h3>Margem Expandida</h3>
+          <p>Content: 215x135px | Padding: 14px 18px | Border: 2px solid | Margin: 14px</p>
+        </article>
+        <article id="box-10" class="box-card">
+          <span class="badge">Elemento #10</span>
+          <h3>Atalho Flex Shorthand</h3>
+          <p>Content: 225x135px | Padding: 16px | Border: 3px ridge | Margin: 10px (`flex: 1 1 220px`)</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Container Flex 3: Row-Reverse e Space-Around -->
+    <section class="flex-section section-reverse-around">
+      <h2 class="section-title">Grupo 3 — Flex Container (`flex-direction: row-reverse`, `justify-content: space-around`)</h2>
+      <div class="flex-container container-03">
+        <article id="box-11" class="box-card">
+          <span class="badge">Elemento #11</span>
+          <h3>Ordem Reversa A</h3>
+          <p>Content: 210x130px | Padding: 16px | Border: 2px solid | Margin: 9px</p>
+        </article>
+        <article id="box-12" class="box-card">
+          <span class="badge">Elemento #12</span>
+          <h3>Ordem Reversa B</h3>
+          <p>Content: 210x130px | Padding: 22px 16px | Border: 2px dashed | Margin: 9px</p>
+        </article>
+        <article id="box-13" class="box-card">
+          <span class="badge">Elemento #13</span>
+          <h3>Ordem Reversa C</h3>
+          <p>Content: 210x130px | Padding: 18px | Border: 3px solid | Margin: 11px</p>
+        </article>
+        <article id="box-14" class="box-card">
+          <span class="badge">Elemento #14</span>
+          <h3>Align-Self Start</h3>
+          <p>Content: 210x130px | Padding: 15px | Border: 2px solid | Margin: 8px (`align-self: flex-start`)</p>
+        </article>
+        <article id="box-15" class="box-card">
+          <span class="badge">Elemento #15</span>
+          <h3>Align-Self Center</h3>
+          <p>Content: 210x130px | Padding: 17px | Border: 2px solid | Margin: 10px (`align-self: center`)</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Container Flex 4: Column / Flex-Flow Responsivo e Align-Content -->
+    <section class="flex-section section-flow-baseline">
+      <h2 class="section-title">Grupo 4 — Flex Container (`flex-flow: row wrap`, `align-items: baseline`, `row-gap` &amp; `column-gap`)</h2>
+      <div class="flex-container container-04">
+        <article id="box-16" class="box-card">
+          <span class="badge">Elemento #16</span>
+          <h3>Baseline Card 16</h3>
+          <p>Content: 210x125px | Padding: 14px | Border: 2px solid | Margin: 8px</p>
+        </article>
+        <article id="box-17" class="box-card">
+          <span class="badge">Elemento #17</span>
+          <h3>Baseline Card 17</h3>
+          <p>Content: 215x135px | Padding: 24px 16px | Border: 3px solid | Margin: 10px</p>
+        </article>
+        <article id="box-18" class="box-card">
+          <span class="badge">Elemento #18</span>
+          <h3>Baseline Card 18</h3>
+          <p>Content: 210x130px | Padding: 16px | Border: 2px dashed | Margin: 12px</p>
+        </article>
+        <article id="box-19" class="box-card">
+          <span class="badge">Elemento #19</span>
+          <h3>Order Final (2)</h3>
+          <p>Content: 220x130px | Padding: 18px | Border: 2px solid | Margin: 8px (`order: 2`)</p>
+        </article>
+        <article id="box-20" class="box-card">
+          <span class="badge">Elemento #20</span>
+          <h3>Destaque Flex-Grow 2</h3>
+          <p>Content: 230x130px | Padding: 20px | Border: 3px solid | Margin: 10px (`flex-grow: 2`)</p>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
