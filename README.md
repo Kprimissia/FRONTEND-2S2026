@@ -17,7 +17,7 @@ O objetivo é documentar minha evolução ao longo do semestre, centralizando os
 | **Atividade 05** | [`atividade-05/`](./atividade-05/) | **Aula 05** — Criando APIs para o Front-end | **API REST CRUD de Notas** (`Express` + `data.json`), **Front-end React CRUD**, **Collection Postman** e *Questões para Refletir*. |
 | **Atividade 06** | [`atividade-06/`](./atividade-06/) | **Aula 06** — Projetos Front-End | Planejamento ágil do **Projeto Integrador** (*Requisitos, User Stories, Backlog, Sprints, Kanban Interativo, Git e DoD*). |
 | **Atividade 07** | [`atividade-07/`](./atividade-07/) | **Aula 07** — Frameworks CSS | **Parte 1:** 20 elementos Box Model + 20 propriedades Flexbox • **Parte 2:** Interface com **36 classes do Tailwind CSS** documentadas. |
-| **Atividade 08** | [`atividade-08/`](./atividade-08/) | **Aulas 08 e 09** — Projeto React 01 e 02 | Aplicação SPA **ReactHub** (*JSX, Componentes, Props, Virtual DOM, Listas/Keys, Condicionais, useState, Forms, useEffect, Fetch e React Router*). |
+| **Atividade 08** | [`atividade-08/`](./atividade-08/) | **Aulas 08 e 09** — Projeto React 01 e 02 | Aplicação SPA **ReactHub** (*JSX, Componentes, Props, Virtual DOM, Listas/Keys, Condicionais, useState, Forms, useEffect + Cleanup, Fetch GET/POST com AbortController, React Router e fallback 404*). |
 
 ---
 

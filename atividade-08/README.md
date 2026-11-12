@@ -54,9 +54,9 @@ atividade-08/
 | :--- | :--- | :--- |
 | **Estado e `useState`** | `App.jsx`, `HomePage.jsx`, `NovoConceitoPage.jsx` | Controle reativo de lista de conceitos, filtros, favoritos e estados de formulário. |
 | **Formulários Controlados** | `src/pages/NovoConceitoPage.jsx` | Inputs sincronizados com `value` + `onChange`, envio com `e.preventDefault()` e validação. |
-| **`useEffect` e Cleanup** | `src/App.jsx` e `src/pages/ApiExplorerPage.jsx` | Sincronização de `document.title` e listener `window.addEventListener('resize', ...)` com função de limpeza `return () => window.removeEventListener(...)`. |
-| **Consumo de API (`fetch`)** | `src/pages/ApiExplorerPage.jsx` | Função `async/await` consultando API REST com verificação `if (!response.ok)`, `try/catch/finally` e estados de `carregando` e `erro`. |
-| **React Router** | `App.jsx`, `Navbar.jsx`, `ConceptDetailPage.jsx` | Navegação SPA sem reload com `BrowserRouter`, `Routes`, `Route`, `Link`, `useNavigate` e rota dinâmica `/conceitos/:id` com `useParams()`. |
+| **`useEffect` e Cleanup** | `src/App.jsx`, `NovoConceitoPage.jsx` e `ApiExplorerPage.jsx` | Sincronização de `document.title`, listener `window.addEventListener('resize', ...)` com `removeEventListener`, limpeza de `setTimeout` com `clearTimeout` e cancelamento de `fetch` com `AbortController`. |
+| **Consumo de API (`fetch`)** | `src/pages/ApiExplorerPage.jsx` | Consultas `GET` e envio `POST` com `async/await`, verificação `if (!response.ok)`, `try/catch/finally`, estado vazio, acessibilidade (`role="status"` / `role="alert"`) e estados de `carregando` e `erro`. |
+| **React Router** | `App.jsx`, `Navbar.jsx`, `ConceptDetailPage.jsx` | Navegação SPA sem reload com `BrowserRouter`, `Routes`, `Route`, `Link`, `useNavigate`, rota dinâmica `/conceitos/:id` com `useParams()` e rota fallback `404` (`path="*"`). |
 
 ---
 
