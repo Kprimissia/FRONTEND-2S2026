@@ -1,8 +1,17 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 function NovoConceitoPage({ onAdicionarConceito }) {
   const navigate = useNavigate()
+  const redirectTimeoutRef = useRef(null)
+
+  useEffect(() => {
+    return () => {
+      if (redirectTimeoutRef.current) {
+        clearTimeout(redirectTimeoutRef.current)
+      }
+    }
+  }, [])
   const [titulo, setTitulo] = useState('')
   const [aula, setAula] = useState('Aula 08')
   const [categoria, setCategoria] = useState('Componentes')
@@ -41,7 +50,10 @@ function NovoConceitoPage({ onAdicionarConceito }) {
     setResumo('')
     setExemploCodigo('')
 
-    setTimeout(() => {
+    if (redirectTimeoutRef.current) {
+      clearTimeout(redirectTimeoutRef.current)
+    }
+    redirectTimeoutRef.current = setTimeout(() => {
       navigate('/')
     }, 900)
   }

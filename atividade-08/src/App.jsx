@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import { CONCEITOS_INICIAIS } from './data/conceitosReact'
 import Navbar from './components/Navbar'
 import HomePage from './pages/HomePage'
@@ -75,6 +75,18 @@ function App() {
               }
             />
             <Route path="/api-explorer" element={<ApiExplorerPage />} />
+            <Route
+              path="*"
+              element={
+                <section className="not-found" style={{ padding: '2rem 0' }}>
+                  <h2>Página não encontrada (404)</h2>
+                  <p>O endereço acessado não existe nesta aplicação.</p>
+                  <Link to="/" className="btn-primary">
+                    Voltar para a página inicial
+                  </Link>
+                </section>
+              }
+            />
           </Routes>
         </main>
       </div>
